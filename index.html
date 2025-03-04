@@ -3,12 +3,241 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/landing.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="./" />
+
     <title>Document</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <a href="./index.html" class="logo-header">
+        <img src="./images/Menu/logo.svg" />
+      </a>
+      <a href="" class="burger-btn"> <img src="./images/Menu/menu.svg" /> </a>
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <img src="./images/Icon/bus.svg" /><a
+              href="./index.html"
+              class="nav-link"
+              >Автобус</a
+            >
+          </li>
+          <li class="nav-item">
+            <img src="./images/Icon/train.svg" /><a href="" class="nav-link"
+              >ЗД квитки</a
+            >
+          </li>
+          <li class="nav-item">
+            <img src="./images/Icon/plane.svg" /><a href="" class="nav-link"
+              >Авіаквитки</a
+            >
+          </li>
+          <li class="nav-item">
+            <img src="./images/Icon/umbrella.svg" /><a href="" class="nav-link"
+              >Страхування</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!--
+      <div class="mobile-menu"><button class="mobile-menu-open"></button></div>-->
+    </header>
+    <main>
+      <section class="hero">
+        <picture>
+          <source
+            srcset="./images/Menu/hero-desk.svg"
+            media="(min-width:835px)"
+          />
+          <source
+            srcset="./images/Menu/hero-tab.svg"
+            media="(min-width:392px)"
+          />
+          <img src="./images/Menu/hero-mob.svg" />
+        </picture>
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Швидкий пошук та бронювання квитків - плануй поїздку без зайвих
+            турбот!
+          </h1>
+          <button type="button" class="hero-button">Шукати квитки</button>
+        </div>
+      </section>
+      <section class="tickets">
+        <div>
+          <ul>
+            <li class="tickets-item">
+              <picture>
+                <source
+                  srcset="./images/Tickets/Bus-L.svg"
+                  media="(min-width:392px)"
+                />
+                <img
+                  src="./images/Tickets/Bus-S.svg"
+                  alt=""
+                  class="tickets-image"
+                />
+              </picture>
+              <h2 class="tickets-title">Квитки на автобус</h2>
+              <p class="tickets-text">
+                Подорожі автобусом – це зручно та доступно. Великий вибір
+                маршрутів, комфортні салони й вигідні ціни роблять цей вид
+                транспорту популярним. Обирайте оптимальний рейс, бронюйте
+                квитки заздалегідь та вирушайте в поїздку без зайвих клопотів.
+                Відкривайте нові міста легко та комфортно!
+              </p>
+            </li>
+            <li class="tickets-item">
+              <picture>
+                <source
+                  srcset="./images/Tickets/Train-L.svg"
+                  media="(min-width:392px)"
+                />
+                <img
+                  src="./images/Tickets/Train-S.svg"
+                  alt=""
+                  class="tickets-image"
+                />
+              </picture>
+              <h2 class="tickets-title">Квитки на поїзд</h2>
+              <p class="tickets-text">
+                Залізничні подорожі – це комфорт і надійність. Просторі вагони,
+                можливість обрати клас обслуговування та широка мережа маршрутів
+                дозволяють легко планувати поїздки. Купуйте квитки онлайн та
+                подорожуйте без стресу. Відчуйте особливу атмосферу подорожей
+                залізницею!
+              </p>
+            </li>
+            <li class="tickets-item">
+              <picture>
+                <source
+                  srcset="./images/Tickets/Plane-L.svg"
+                  media="(min-width:392px)"
+                />
+                <img
+                  src="./images/Tickets/Plane-S.svg"
+                  alt=""
+                  class="tickets-image"
+                />
+              </picture>
+              <h2 class="tickets-title">Авіаквитки</h2>
+              <p class="tickets-text">
+                Перельоти – це швидкість і зручність. Сучасні літаки, комфортні
+                умови та велика кількість рейсів дозволяють подорожувати без
+                затримок. Бронюйте квитки онлайн, обирайте найкращі пропозиції
+                та летіть із задоволенням. Досліджуйте світ швидко, комфортно та
+                без зайвих турбот!
+              </p>
+            </li>
+            <li class="tickets-item">
+              <picture>
+                <source
+                  srcset="./images/Tickets/Insurance-L.svg"
+                  media="(min-width:392px)"
+                />
+                <img
+                  src="./images/Tickets/Insurance-S.svg"
+                  alt=""
+                  class="tickets-image"
+                />
+              </picture>
+              <h2 class="tickets-title">Страхування</h2>
+              <p class="tickets-text">
+                Подорожуйте без ризиків! Страховий поліс захистить вас у разі
+                непередбачених ситуацій, допоможе уникнути зайвих витрат і
+                гарантує спокій у будь-якій країні. Оформлюйте страховку
+                заздалегідь і насолоджуйтеся мандрівкою. Відпочивайте впевнено,
+                знаючи, що ви під захистом!
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <picture class="footer-picture"
+        ><source
+          srcset="./images/Footer/footer-desk.svg"
+          media="(min-width:835px)" />
+        <source
+          srcset="./images/Footer/footer-tab.svg"
+          media="(min-width:392px)" />
+        <img src="./images/Footer/footer-mob.svg"
+      /></picture>
+      <a href="./index.html" class="logo-footer">
+        <img src="./images/Menu/logo-white.svg" />
+      </a>
+      <div class="lists">
+        <ul class="footer-ways-list">
+          <li class="way-item"><a href="">Жд квитки</a></li>
+          <li class="way-item"><a href="">Автобуси</a></li>
+          <li class="way-item"><a href="">Авіаквитки</a></li>
+          <li class="way-item"><a href="">Страхування</a></li>
+        </ul>
+        <ul class="footer-info-list">
+          <li class="info-item">
+            <a href="" class="info-footer-link">Політика конфіденційності</a>
+          </li>
+          <li class="info-item">
+            <a href="" class="info-footer-link">+380 67 166 11 11</a>
+          </li>
+          <li class="info-item">
+            <a href="" class="info-footer-link">Договір публичної оферти</a>
+          </li>
+          <li class="info-item">
+            <a href="" class="info-footer-link">support@skybooking.ua</a>
+          </li>
+        </ul>
+        <ul class="footer-social-list">
+          <li class="footer-icon-item">
+            <a href="" target="_blank" class="footer-link">
+              <svg class="footer-icon" width="23" height="24">
+                <use href="./images/symbol-defs.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank" class="footer-link">
+              <svg class="footer-icon" width="23" height="24">
+                <use href="./images/symbol-defs.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank" class="footer-link">
+              <svg class="footer-icon" width="23" height="24">
+                <use href="./images/symbol-defs.svg#viber"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" target="_blank" class="footer-link">
+              <svg class="footer-icon" width="23" height="24">
+                <use href="./images/symbol-defs.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <picture class="pay-picture">
+          <img class="payment-footer" src="./images/Footer/mastercard.svg" />
+          <img class="payment-footer" src="./images/Footer/visa.svg" />
+        </picture>
+        <p class="footer-text">
+          &copy; 2002-2023 ТОВ «Дельта-Ексклюзив» Краще не шукайте, краще не
+          знайдете - SkyBooking
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
