@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,7 +18,6 @@
 
     <title>Document</title>
   </head>
-  <body>
     <header>
       <a href="./index.html" class="logo-header">
         <img src="./images/Menu/logo.svg" />
@@ -165,13 +164,19 @@
         <picture>
           <source
             srcset="./images/Menu/hero-desk.svg"
-            media="(min-width:835px)"
+            media="(min-width: 992px)"
           />
           <source
             srcset="./images/Menu/hero-tab.svg"
-            media="(min-width:392px)"
+            media="(min-width: 570px)"
           />
-          <img src="./images/Menu/hero-mob.svg" />
+          <img
+            class="hero-bg"
+            src="./images/Menu/hero-mob.svg"
+            alt="bus_s"
+            width="1600"
+            height="371"
+          />
         </picture>
         <div class="hero-content">
           <h1 class="hero-title">
@@ -281,28 +286,34 @@
       </section>
     </main>
     <footer class="footer">
-      <picture class="footer-picture"
-        ><source
+      <picture class="footer-pic">
+        <source
           srcset="./images/Footer/footer-desk.svg"
-          media="(min-width:835px)" />
+          media="(min-width: 992px)"
+        />
         <source
           srcset="./images/Footer/footer-tab.svg"
-          media="(min-width:392px)" />
-        <img src="./images/Footer/footer-mob.svg"
-      /></picture>
+          media="(min-width: 570px)"
+        />
+        <img
+          class="footer-bg"
+          src="./images/Footer/footer-mob.svg"
+          alt="bus_s"
+          width="1600"
+          height="371"
+        />
+      </picture>
       <a href="./index.html" class="logo-footer">
-        <img src="./images/Menu/logo-white.svg" />
+        <img src="./images/Menu/logo-white.svg" alt="Skybooking logo" />
       </a>
       <div class="lists">
         <ul class="footer-ways-list">
-          <!--Вставить ссылки на сайт с билетами-->
           <li class="way-item"><a href="">Жд квитки</a></li>
           <li class="way-item"><a href="">Автобуси</a></li>
           <li class="way-item"><a href="">Авіаквитки</a></li>
           <li class="way-item"><a href="">Страхування</a></li>
         </ul>
         <ul class="footer-info-list">
-          <!--Вставить ссылки на договора-->
           <li class="info-item">
             <a href="" class="info-footer-link">Політика конфіденційності</a>
           </li>
@@ -321,7 +332,6 @@
           </li>
         </ul>
         <ul class="footer-social-list">
-          <!--Вставить ссылки на соц сети проекта-->
           <li class="footer-icon-item">
             <a href="" target="_blank" class="footer-link">
               <svg class="footer-icon" width="23" height="24">
@@ -361,6 +371,7 @@
         </p>
       </div>
     </footer>
+  
     <script type="module" src="./js/modal.js"></script>
   </body>
 </html>
